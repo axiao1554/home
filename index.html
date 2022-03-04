@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>阿小之家</title>
+    <meta name="keywords" content="阿小之家,个人主页">
+    <meta name="description" content="阿小的个人主页，欢迎大家的到来！">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-next.png?v=7.1.2">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32-next.png?v=7.1.2">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16-next.png?v=7.1.2">
+    <link rel="mask-icon" href="images/logo.png?v=7.1.2" color="#222">
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/cursor.css" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <link rel="stylesheet" href="source/lib/aplayer/dist/APlayer.min.css">
+    <link rel="stylesheet" href="assets/css/kankore.css">
+    <script src="source/lib/aplayer/dist/APlayer.min.js"></script>
+    <script>
+        /*百度统计*/
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?e6447ff1cdb690271f23f99d7e71d788";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+    <!-- 弹窗 -->
+    <div class="app-notifier" style="display: none;">
+        <div class="notifier-body">
+            <div class="bg"></div>
+            <div class="notifier-content">
+                <p>扫码关注一下哦(●'◡'●)</p>
+                <div class="btn-group">
+                    <a class="btn cancel" href="javascript:;" onclick="hide_alert()">朕知道了啦</a>
+                </div>
+                <div class="wechat-q">
+                    <img src="images/wechat-qcode.jpg" width="105px" height="105px" alt="">
+                    <img src="images/wechatpay.png" width="100px" height="100px" alt="">
+                    <img src="images/alipay.png" width="100px" height="100px" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="fix_bar">
+        <li class="layui-icon layui-fixbar-top" id="to_top" title="返回顶部">返回顶部</li>
+        <li class="layui-icon layui-fixbar-down" id="to_bottom" title="去底部">到达底部</li>
+    </ul>
+    <div id="page-wrapper">
+        <!-- Header -->
+        <header id="header">
+            <h1 id="logo"><a href="/">阿小之家</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="./">主页</a></li>
+                    <!-- <li><a href="./chuyin">喵喵</a></li> -->
+                    <li>
+                        <a href="#">直播</a>
+                        <ul>
+                            <li><a href="https://live.bilibili.com/" target="_blank">哔哩哔哩</a></li>
+                            <li><a href="https://www.douyu.com/" target="_blank">斗鱼TV</a></li>
+                            <li><a href="https://www.huya.com/" target="_blank">虎牙TV</a></li>
+                            <li><a href="https://www.zhanqi.tv/" target="_blank">战旗TV</a></li>
+                            <li><a href="http://longzhu.com/" target="_blank">龙珠TV</a></li>
+                            <li><a href="https://chushou.tv/" target="_blank">触手TV</a></li>
+                            <li><a href="http://www.huajiao.com/" target="_blank">花椒TV</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;" onclick="javascript:document.getElementById('four').scrollIntoView()">项目</a></li>
+                    <li><a href="javascript:;" onclick="pay()">投食</a></li>
+                    <li><a href="http://blog.axiao.vip" target="_blank" class="button special">博客</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Banner -->
+        <section id="banner">
+            <div class="content">
+                <header>
+                    <h2>阿小之家</h2>
+                    <p>我的个人空间<br />
+                    闲的无聊...</p>
+                </header>
+                <span class="image"><img src="images/head_portrait.jpg" alt="天空铃音" /></span>
+            </div>
+            <a href="#one" class="goto-next scrolly">Next</a>
+        </section>
+
+        <!-- One -->
+        <section id="one" class="spotlight style1 bottom">
+            <span class="image fit main"><img src="images/pic001.jpg" alt="关于铃音" /></span>
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="4u 12u$(medium)">
+                            <header>
+                                <h2>关于阿小</h2>
+                                <p>花有重开日，人无再少年</p>
+                            </header>
+                        </div>
+                        <div class="4u 12u$(medium)">
+                            <p>公告：
+                            <br />还没有想好
+                            </p>
+                        </div>
+                        <div class="4u$ 12u$(medium)">
+                            <p>更新时间：2019/06/10
+                            <br />最近正在做的事情：网站专题制作
+                            <br />最近需要的事情：还不知道
+                            <br />最近想做的事情：睡觉。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#two" class="goto-next scrolly">Next</a>
+        </section>
+
+        <!-- Two -->
+        <section id="two" class="spotlight style2 right">
+            <span class="image fit main"><img src="images/pic002.jpg" alt="" /></span>
+            <div class="content">
+                <header>
+                    <h2>阿小笔记</h2>
+                    <p>这里是阿小的个人博客哟！</p>
+                </header>
+                <p>
+                记录生活日常
+                <br />爱记录
+                <br />爱生活</p>
+                <ul class="actions">
+                    <li><a href="http://blog.axiao.vip" class="button">进入</a></li>
+                </ul>
+            </div>
+            <a href="#three" class="goto-next scrolly">Next</a>
+        </section>
+
+        <!-- Three -->
+        <section id="three" class="spotlight style3 left">
+            <span class="image fit main bottom"><img src="images/pic003.jpg" alt="" /></span>
+            <div class="content">
+                <header>
+                    <h2>阿小萌导航</h2>
+                    <p>一个绿色的二次元导航网站</p>
+                </header>
+                <p>该网站是一个绿色的二次元导航网站，拥有各种方便的功能。</p>
+                <ul class="actions">
+                    <li><a href="http://blog.axiao.vip/moe" target="_blank" class="button">进入阿小萌导航</a></li>
+                </ul>
+            </div>
+            <a href="#four" class="goto-next scrolly">Next</a>
+        </section>
+
+        <!-- Four -->
+        <section id="four" class="wrapper style1 special fade-up">
+            <div class="container">
+                <header class="major">
+                    <h2>项目介绍</h2>
+                    <p>我的项目实验室还未启动，在这里先记录一下。</p>
+                </header>
+                <div class="box alt">
+                    <div class="row uniform">
+                        <section class="4u 6u(medium) 12u$(xsmall)">
+                            <a href="http://blog.axiao.vip" target="_blank"><span class="icon alt major fa-area-chart"><img src="images/avatar.png" class="avatar" alt=""></span>
+                            <h3>阿小笔记</h3>
+                            <p>爱记录，爱生活</p></a>
+                        </section>
+                        <!-- <section class="4u 6u$(medium) 12u$(xsmall)">
+                            <a href="http://v.axiao.vip" target="_blank"><span class="icon alt major fa-comment"><img src="images/link-axys.png" class="avatar" alt=""></span>
+                            <h3>阿小影视</h3>
+                            <p>免费看各大影视网的VIP视频</p></a>
+                        </section> -->
+                        <section class="4u 6u$(medium) 12u$(xsmall)">
+                            <a href="http://blog.axiao.vip/moe" target="_blank"><span class="icon alt major fa-flask"><img src="images/link-moe.png" class="avatar" alt=""></span>
+                            <h3>阿小萌导航</h3>
+                            <p>绿色导航，为二次元而生</p></a>
+                        </section>
+                        <section class="4u$ 6u(medium) 12u$(xsmall)">
+                            <a href="http://blog.axiao.vip/cy" target="_blank"><span class="icon alt major fa-flask"><img src="images/link-moe.png" class="avatar" alt=""></span>
+                            <h3>初音未来Music</h3>
+                            <p>动起来，鲜花会为你开</p></a>
+                        </section>
+                        <!-- <section class="4u 6u$(medium) 12u$(xsmall)">
+                            <a href="http://shengqian.axiao.vip" target="_blank"><span class="icon alt major fa-paper-plane"><img src="images/link-sheng.png" class="avatar" alt=""></span>
+                            <h3>阿小好券</h3>
+                            <p>买东西就去阿小好券淘券吧</p></a>
+                        </section> -->
+                        <section class="4u 6u(medium) 12u$(xsmall)">
+                            <a href="javascript:alert('敬请期待！');" class=""><span class="icon alt major fa-file"><img src="images/link-moe.png" class="avatar" alt=""></span>
+                            <h3>阿小实验室</h3>
+                            <p>未启动</p></a>
+                        </section>
+                        <section class="4u$ 6u$(medium) 12u$(xsmall)">
+                            <a href="javascript:alert('敬请期待！');" class=""><span class="icon alt major fa-lock"><img src="images/link-moe.png" class="avatar" alt=""></span>
+                            <h3>阿小工具箱</h3>
+                            <p>未启动</p></a>
+                        </section>
+                    </div>
+                </div>
+                <footer class="major">
+                    <ul class="actions">
+                        <li><a href="javascript:alert('敬请期待！');" class="button">更多项目</a></li>
+                    </ul>
+                </footer>
+            </div>
+        </section>
+
+        <!-- Five -->
+        <section id="five" class="wrapper style2 special fade">
+            <div class="container">
+                <header>
+                    <h2>想了解更多请订阅我哦</h2>
+                    <p>更多资讯请订阅我哦</p>
+                </header>
+                <input type="submit" value="订阅" class="special" onclick="ding()"/>
+                <!-- <form action="#" target="_blank" method="post" class="container 50%">
+                    <div class="row uniform 50%">
+                        <div class="8u 12u$(xsmall)">
+                            <input type="hidden" name="t" value="qf_booked_feedback">
+                            <input type="hidden" name="id" value="033e93eb65915cceb8bc755eed7090c023ff1df0bea91d8c">
+                            <input type="email" name="to"  id="email" placeholder="XXX@vip.qq.com" value="" required="" />
+                        </div>
+                        <div class="4u$ 12u$(xsmall)">
+                            <input type="submit" value="订阅" class="fit special" />
+                        </div>
+                    </div>
+                </form> -->
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <!--<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>-->
+                <li><a href="http://blog.axiao.vip" target="_blank" class=""><span class="label">阿小笔记</span></a></li>
+                <!-- <li><a href="http://v.axiao.vip" target="_blank" class=""><span class="label">阿小影视</span></a></li> -->
+                <li><a href="http://blog.axiao.vip/moe" target="_blank" class=""><span class="label">阿小萌导航</span></a></li>
+                <!-- <li><a href="http://shengqian.axiao.vip" target="_blank" class=""><span class="label">阿小好券</span></a></li> -->
+                <li><a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=EXBpeHB_ICQkJVFgYD9yfnw" target="_blank" class=""><span class="label">Email</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <p>『<span id="sitetime"></span>』</p>
+                <p><a href="http://beian.miit.gov.cn" target="_blank">晋ICP备17012880号-2</a></p>
+                <li>&copy; 2019 ❤️ <a href="http://blog.axiao.vip" target="_blank">阿小</a></li>
+                <li><a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=EXBpeHB_ICQkJVFgYD9yfnw" target="_blank">合作联系邮箱：axiao1554@qq.com</a></li>
+                <li><a href="">阿小之家</a></li>
+            </ul>
+        </footer>
+    </div>
+    <!-- aplayer -->
+    <div id="aplayer"></div>
+    <!-- kankore -->
+    <div class="kankore-bath">
+        <div class="akagi kan" href="javascript:;">
+            <img src="images/kankore-bath-akagi.png">
+        </div>
+        <div class="shimakaze kan floating" href="javascript:;">
+            <img src="images/kankore-bath-shimakaze.png">
+        </div>
+        <div class="ryujo kan" href="javascript:;">
+            <img src="images/kankore-bath-ryujo.png">
+        </div>
+        <div class="kitakami kan floating" href="javascript:;">
+            <img src="images/kankore-bath-kitakami.png">
+        </div>
+        <div class="akagi kan" href="javascript:;">
+            <img src="images/kankore-bath-uzuki.png">
+        </div>
+        <div class="akagi kan" href="javascript:;">
+            <img src="images/kankore-bath-yayoi.png">
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script>
+        const ap = new APlayer({
+            container: document.getElementById('aplayer'),
+            theme: '#222',
+            fixed: true,
+            lrcType: 3,
+            audio: [{
+                name: '青鸟',
+                artist: 'いきものがかり',
+                url: 'source/lib/assets/qn.mp3',
+                cover: 'source/lib/assets/cover.jpg',
+                lrc: 'source/lib/assets/qn.lrc'
+            }]
+        });
+    </script>
+    <script>
+        /*百度推送*/
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-migrate.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/clicklove.js"></script>
+    <script src="assets/js/uptitle.js"></script>
+    <script src="assets/js/kankore.js"></script>
+</body>
+</html>
+<script>
+function siteTime(){
+    window.setTimeout("siteTime()", 1000);
+    var seconds = 1000;
+    var minutes = seconds * 60;
+    var hours = minutes * 60;
+    var days = hours * 24;
+    var years = days * 365;
+    var today = new Date();
+    var todayYear = today.getFullYear();
+    var todayMonth = today.getMonth()+1;
+    var todayDate = today.getDate();
+    var todayHour = today.getHours();
+    var todayMinute = today.getMinutes();
+    var todaySecond = today.getSeconds();
+    /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+    year - 作为date对象的年份，为4位年份值
+    month - 0-11之间的整数，做为date对象的月份
+    day - 1-31之间的整数，做为date对象的天数
+    hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+    minutes - 0-59之间的整数，做为date对象的分钟数
+    seconds - 0-59之间的整数，做为date对象的秒数
+    microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+    var t1 = Date.UTC(2019,06,10,17,27,00); //北京时间2018-2-13 00:00:00
+    var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+    var diff = t2-t1;
+    var diffYears = Math.floor(diff/years);
+    var diffDays = Math.floor((diff/days)-diffYears*365);
+    var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+    var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+    var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+    document.getElementById("sitetime").innerHTML=" 已运行"+/*diffYears+" 年 "+*/diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+}/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
+siteTime();
+</script>

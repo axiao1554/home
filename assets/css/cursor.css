@@ -1,0 +1,95 @@
+body {
+	cursor: url(../../images/normal.cur), default;
+}
+a:hover {
+	cursor: url(../../images/link.cur), pointer;
+}
+.fix_bar{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 9999;
+    cursor: url(../../images/link.cur), pointer;
+}
+.layui-fixbar-top{
+    font-size: 14px;
+    background-color: rgba(0,0,0,.3);
+    cursor: url(../../images/link.cur), pointer;
+ }
+.layui-fixbar-down{
+    font-size: 14px;
+    background-color: rgba(0,0,0,.3);
+    cursor: url(../../images/link.cur), pointer;
+}
+
+.app-notifier {
+    max-width: 600px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    bottom: 10%;
+    left: 50%;
+    display: none;
+    position: fixed;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+.app-notifier .notifier-body {
+    border-radius: 50px;
+    position: relative;
+    width: 100%;
+    padding: 15px 0;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 2px 8px 0 rgba(100, 100, 100, 0.2);
+}
+.app-notifier .notifier-body .btn {
+    border-radius: 20px;
+    padding: 4px 16px;
+    display: block;
+    float: left;
+    transition: 0.15s margin, 0.15s box-shadow;
+    font-size: 13px;
+    border: 1px solid transparent;
+}
+.app-notifier .notifier-body .btn:hover {
+    box-shadow: 0 3px 3px 0 rgba(100, 100, 100, 0.1);
+    text-decoration: none;
+    margin-top: -3px;
+}
+.app-notifier .notifier-body .btn:active {
+    margin-top: 0;
+}
+.app-notifier .notifier-body .btn.ok {
+    background: #2bc54d;
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+}
+.app-notifier .notifier-body .btn.cancel {
+    border: 1px solid #dadada;
+    background: #fafafa;
+}
+.app-notifier .notifier-body .btn.cancel:hover {
+    color: #222;
+}
+.app-notifier .notifier-body .btn-group {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.app-notifier .notifier-body .bg {
+    border-radius: 50px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+}
+.app-notifier .notifier-body .notifier-content {
+    color: #707581;
+    padding: 0 210px 0 20px;
+    position: relative;
+}
